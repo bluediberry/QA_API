@@ -9,21 +9,24 @@ This is a Q&A forum Node API for students and teachers to interact with each oth
 2. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/qna-forum-node-api.git
+   git clone https://github.com/bluediberry/QA_API.git
 
 ## Running the project
 
-1. cd qna-forum-node-api
-2. npm install
-3. Set up the database:
-3.1. Create a PostgreSQL database for the project
-3.2. Update the database connection configuration in the config.js file, located in the project root directory
+1. Initialize the project
+   
+   ```bash
+   cd QA_API
+   npm install
+
+2. Create a PostgreSQL database for the project
+3. Update the database connection configuration in the config.js file, located in the project root directory
 4. Run the database migrations:
    
    ```bash
    npx sequelize-cli db:migrate
 
-6. Start the server
+5. Start the server
    
    ```bash
    node src/index.js
@@ -33,7 +36,7 @@ This is a Q&A forum Node API for students and teachers to interact with each oth
 The API server will start running on http://localhost:3000 by default.
 Use an HTTP client like Postman to interact with the API endpoints.
 
-```bash
+```json
 
 ## POST /questions
 
